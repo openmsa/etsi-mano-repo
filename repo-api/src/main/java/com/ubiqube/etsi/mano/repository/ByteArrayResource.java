@@ -16,6 +16,7 @@
  */
 package com.ubiqube.etsi.mano.repository;
 
+import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
 /**
@@ -23,37 +24,29 @@ import java.io.InputStream;
  * @author Olivier Vignaud <ovi@ubiqube.com>
  *
  */
-public class ManoUrlResource implements ManoResource {
-	private long size;
-	private String fileName;
-	private final HttpRequestor requestor;
+public class ByteArrayResource implements ManoResource {
 
-	public ManoUrlResource(final long size, final String url, final HttpRequestor requestor) {
-		this.size = size;
-		this.fileName = url;
-		this.requestor = requestor;
+	private final byte[] src;
+	private final String filename;
+
+	public ByteArrayResource(final byte[] src, final String filename) {
+		this.src = src;
+		this.filename = filename;
 	}
 
 	@Override
 	public InputStream getInputStream() {
-		return requestor.getInputStream();
+		return new ByteArrayInputStream(src);
 	}
 
 	@Override
 	public long getSize() {
-		return size;
-	}
-
-	public void setSize(final long size) {
-		this.size = size;
+		return src.length;
 	}
 
 	@Override
 	public String getFileName() {
-		return fileName;
+		return filename;
 	}
 
-	public void setFileName(final String fileName) {
-		this.fileName = fileName;
-	}
 }

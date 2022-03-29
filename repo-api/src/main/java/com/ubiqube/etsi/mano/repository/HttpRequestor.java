@@ -23,37 +23,7 @@ import java.io.InputStream;
  * @author Olivier Vignaud <ovi@ubiqube.com>
  *
  */
-public class ManoUrlResource implements ManoResource {
-	private long size;
-	private String fileName;
-	private final HttpRequestor requestor;
+public interface HttpRequestor {
 
-	public ManoUrlResource(final long size, final String url, final HttpRequestor requestor) {
-		this.size = size;
-		this.fileName = url;
-		this.requestor = requestor;
-	}
-
-	@Override
-	public InputStream getInputStream() {
-		return requestor.getInputStream();
-	}
-
-	@Override
-	public long getSize() {
-		return size;
-	}
-
-	public void setSize(final long size) {
-		this.size = size;
-	}
-
-	@Override
-	public String getFileName() {
-		return fileName;
-	}
-
-	public void setFileName(final String fileName) {
-		this.fileName = fileName;
-	}
+	InputStream getInputStream();
 }
