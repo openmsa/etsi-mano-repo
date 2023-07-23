@@ -12,7 +12,7 @@
  *     GNU General Public License for more details.
  *
  *     You should have received a copy of the GNU General Public License
- *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ *     along with this program.  If not, see https://www.gnu.org/licenses/.
  */
 package com.ubiqube.etsi.mano.repository;
 
@@ -22,7 +22,7 @@ import java.util.List;
 /**
  * XXX Maybe we can change String to Path.
  *
- * @author Olivier Vignaud <ovi@ubiqube.com>
+ * @author Olivier Vignaud {@literal <ovi@ubiqube.com>}
  *
  */
 public interface Low {
@@ -30,7 +30,7 @@ public interface Low {
 	/**
 	 * Check if file or directory exist.
 	 *
-	 * @param _path The path.
+	 * @param path The path.
 	 * @return True if path or filename exist.
 	 */
 	boolean exist(String path);
@@ -38,38 +38,38 @@ public interface Low {
 	/**
 	 * Create a directory.
 	 *
-	 * @param _path the path to the directory.
+	 * @param path the path to the directory.
 	 */
 	void mkdir(String path);
 
 	/**
 	 * Convenient method to add a file to the repository.
 	 *
-	 * @param _path    The path where the file will be created.
-	 * @param _content The content of the file.
+	 * @param path    The path where the file will be created.
+	 * @param content The content of the file.
 	 */
 	void add(String path, byte[] content);
 
 	/**
 	 * Convenient method to add a file to the repository.
 	 *
-	 * @param _path   The path where the file will be created.
-	 * @param _stream The inputStream.
+	 * @param path   The path where the file will be created.
+	 * @param stream The inputStream.
 	 */
 	void add(String path, InputStream stream);
 
 	/**
 	 * Delete a file in the repository.
 	 *
-	 * @param _path The path.
+	 * @param path The path.
 	 */
 	void delete(String path);
 
 	/**
 	 * Recursively search for file element.
 	 *
-	 * @param _path    The path to scan.
-	 * @param _pattern the end the file name, extension.
+	 * @param path    The path to scan.
+	 * @param pattern the end the file name, extension.
 	 * @return The list of matching files.
 	 */
 	List<String> find(String path, String pattern);
@@ -77,7 +77,7 @@ public interface Low {
 	/**
 	 * Is directory.
 	 *
-	 * @param _path The path.
+	 * @param path The path.
 	 * @return True if path point on a directory.
 	 */
 	boolean isDirectory(String path);
@@ -95,7 +95,7 @@ public interface Low {
 	/**
 	 * Convenient method for retrieving a file.
 	 *
-	 * @param _pathThe filename.
+	 * @param path The filename.
 	 * @return The content of the file.
 	 */
 	ManoResource get(String path);
