@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>com.ubiqube.mano</groupId>
 		<artifactId>mano-super-pom</artifactId>
-		<version>3.1.0-SNAPSHOT</version>
+		<version>3.2.0</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ubiqube.mano.repository</groupId>
@@ -16,4 +16,8 @@
 		<module>repo-fs</module>
 		<module>repo-gridfs</module>
 	</modules>
+
+  <scm>
+    <tag>mano-repo-aggregator-3.2.0</tag>
+  </scm>
 </project>
