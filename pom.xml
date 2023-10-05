@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.ubiqube.mano</groupId>
@@ -17,7 +19,8 @@
 		<module>repo-gridfs</module>
 	</modules>
 
-  <scm>
-    <tag>mano-repo-aggregator-3.2.0</tag>
-  </scm>
+	<scm>
+		<developerConnection>scm:git:https://github.com/openmsa/etsi-mano-repo.git</developerConnection>
+		<tag>mano-repo-aggregator-3.2.0</tag>
+	</scm>
 </project>
