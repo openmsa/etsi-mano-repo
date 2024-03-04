@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>com.ubiqube.mano.repository</groupId>
 		<artifactId>mano-repo-aggregator</artifactId>
-		<version>3.2.1-SNAPSHOT</version>
+		<version>4.0.0-SNAPSHOT</version>
 	</parent>
 	<artifactId>mano-repo-api</artifactId>
 	<description>Build document for ETSI-MANO API</description>
