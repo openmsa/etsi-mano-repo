@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>com.ubiqube.mano</groupId>
 		<artifactId>mano-super-pom</artifactId>
-		<version>4.0.0</version>
+		<version>4.0.1-SNAPSHOT</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ubiqube.mano.repository</groupId>
@@ -19,6 +19,6 @@
 
 	<scm>
 		<developerConnection>scm:git:https://github.com/openmsa/etsi-mano-repo.git</developerConnection>
-		<tag>mano-repo-aggregator-4.0.0</tag>
+		<tag>mano-repo-aggregator-3.2.0</tag>
 	</scm>
 </project>
