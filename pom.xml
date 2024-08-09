@@ -18,7 +18,7 @@
 	</modules>
 
 	<scm>
-		<developerConnection>scm:git:https://github.com/openmsa/etsi-mano-repo.git</developerConnection>
+		<developerConnection>scm:git:ssh://git@github.com/openmsa/etsi-mano-repo.git</developerConnection>
 		<tag>mano-repo-aggregator-3.2.0</tag>
 	</scm>
 </project>
